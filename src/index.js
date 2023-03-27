@@ -35,7 +35,7 @@ function onLoadMore() {
 function fetchImages() {
   axios
     .get(
-      `https://pixabay.com/api/?key=${API_KEY}&q=${searchQuery}&image_type=photo&orientation=horizontal&safesearch=true&page=${page}&per_page=200`
+      `https://pixabay.com/api/?key=${API_KEY}&q=${searchQuery}&image_type=photo&orientation=horizontal&safesearch=true&page=${page}&per_page=40`
     )
     .then(({ data }) => {
       const hits = data.hits;
